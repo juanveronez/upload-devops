@@ -1,0 +1,10 @@
+name: upload-devops
+description: Projeto IaC Pós 360 Rocketseat
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript
