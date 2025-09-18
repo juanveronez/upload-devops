@@ -1,6 +1,7 @@
 {
     "name": "upload-devops",
     "main": "index.ts",
+    "packageManager": "pnpm@10.12.1",
     "devDependencies": {
         "@types/node": "^18",
         "typescript": "^5.0.0"
