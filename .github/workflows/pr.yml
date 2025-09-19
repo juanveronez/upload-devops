@@ -41,6 +41,10 @@ jobs:
         uses: pulumi/actions@v6
         with:
           command: preview
-          stack-name: juanveronez-org/upload-devops/stg
+          stack-name: stg
+          cloud-url: s3://r-360-pulumi-state
         env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          PULUMI_CONFIG_PASSPHRASE: ''
